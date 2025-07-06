@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Usuario</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jQuery UI para el datepicker -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1>Sistema de Gestión</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formulario.html" class="active">Nuevo Usuario</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Crear Nuevo Usuario</h2>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="name">Nombre*</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="username">Usuario*</label>
+                <input type="text" id="username" name="username" required>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="date">Fecha Ingreso*</label>
+                <input type="text" id="date" name="date" required>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="gender">Género</label>
+                <select id="gender" name="gender">
+                    <option value="">Seleccionar...</option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Femenino</option>
+                    <option value="other">Otro</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="website">Sitio Web</label>
+                <input type="url" id="website" name="website">
+                <span class="error-message"></span>
+            </div>
+            
+            <div class="form-actions">
+                <button type="button" id="cancelBtn" class="btn btn-secondary">Cancelar</button>
+                <button type="submit" id="saveBtn" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/form.js"></script>
+</body>
+</html>

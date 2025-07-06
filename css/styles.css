@@ -1,0 +1,188 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    box-shadow: none;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #34495e;
+}
+
+/* Controles */
+.controls {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+select, .btn {
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+/* Tabla */
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.dataTables_wrapper {
+    margin-top: 20px;
+}
+
+/* Formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    display: none;
+}
+
+input.error, select.error {
+    border-color: #e74c3c;
+}
+
+input.error + .error-message {
+    display: block;
+}
+
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Estilos para DataTables */
+#dataTable.loading {
+    opacity: 0.5;
+}
+
+#dataTable th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+#dataTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.completed {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.pending {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5em 1em;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #2c3e50;
+    color: white !important;
+    border: 1px solid #2c3e50;
+}

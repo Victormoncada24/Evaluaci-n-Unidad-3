@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Usuarios</title>
+    <!-- jQuery y DataTables -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.datatables.net/v/dt/dt-2.3.2/datatables.min.css" rel="stylesheet">
+    <script src="https://cdn.datatables.net/v/dt/dt-2.3.2/datatables.min.js"></script>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1>Sistema de Gestión</h1>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="formulario.html">Nuevo Usuario</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Datos del Sistema</h2>
+        <div class="controls">
+            <select id="dataSelector">
+                <option value="users">Usuarios</option>
+                <option value="posts">Publicaciones</option>
+                <option value="todos">Comentarios</option>
+            </select>
+            <button id="loadData" class="btn">Cargar Datos</button>
+        </div>
+
+        <div class="table-container">
+            <table id="dataTable" class="display">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Usuario</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Datos se cargarán dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
